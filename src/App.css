@@ -1,0 +1,69 @@
+.form-container {
+  background-color: rgb(237, 237, 237);
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.todo-container {
+  border: 1px solid green;
+  border-radius: 5px;
+  margin: 10px;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  width: 200px;
+}
+
+.delete-btn {
+  background-color: rgb(139, 4, 35);
+  color: white;
+  border-radius: 5px;
+  border: none;
+  padding: 8px 15px;
+  margin: 5px;
+}
+
+.delete-btn:hover {
+  background-color: rgb(50, 7, 7);
+}
+
+.done-cancel-btn {
+  background-color: rgb(124, 185, 154);
+  color: white;
+  border-radius: 5px;
+  border: none;
+  padding: 8px 15px;
+  margin: 5px;
+}
+
+.done-cancel-btn:hover {
+  background-color: darkgreen;
+}
+
+.add-btn {
+  background-color: rgb(29, 106, 112);
+  color: white;
+  border-radius: 5px;
+  border: none;
+  padding: 8px 15px;
+}
+
+.add-btn:hover {
+  background-color: rgb(13, 33, 45);
+}
+
+input {
+  border: none;
+  border-radius: 10px;
+  height: 30px;
+  width: 200px;
+  margin-right: 50px;
+  margin-left: 10px;
+}
+.hide {
+  display: none;
+}

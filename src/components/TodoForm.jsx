@@ -7,6 +7,7 @@ const TodoForm = (props) => {
     id: crypto.randomUUID(),
     title: "",
     content: "",
+    isDone: false,
   };
 
   const resetForm = () => {
@@ -17,13 +18,12 @@ const TodoForm = (props) => {
 
   const handleOnChange = (e) => {
     const { name, value } = e.target;
-    console.log(e.target);
     SetNewTodo({ ...newTodo, [name]: value });
   };
 
   const handleAddSubmit = (e) => {
     e.preventDefault();
-    //유효성검사
+
     if (!newTodo.content || !newTodo.title) {
       alert("제목과 내용을 모두 기입해주세요!");
       return;
@@ -31,7 +31,6 @@ const TodoForm = (props) => {
     setTodos([...todos, newTodo]);
     resetForm();
   };
-  console.log(todos);
 
   return (
     <form className="form-container" onSubmit={handleAddSubmit}>
